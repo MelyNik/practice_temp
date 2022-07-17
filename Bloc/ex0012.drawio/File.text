@@ -51,3 +51,21 @@ double ab = x[0] - y[0];
 double ac = x[1] - y[1];
 var d = Math.Sqrt(ab * ab + ac * ac);
 Console.WriteLine($"d = {d}");
+
+Задача 6
+
+Показать числа, у которых последняя цифра делится на 4
+
+count = int(input("n = "))                int - целое число, input - ввод данных
+index = 0
+while index <= count:
+    if (index % 10) % 4 = 0:              % 10 или % 4 - остаток от деления, последния цифра цисла
+        print(index, end=" ")
+    index += 1
+
+Задача 7 
+
+let a = 2020
+const b = " это успех! "
+let result = a + b;
+console.log(result)
