@@ -1,0 +1,7 @@
+## Ромб (Условие)
+
+if(condition) {
+    /// condition -> TRUE
+} else {
+    /// condition -> FALSE
+}
