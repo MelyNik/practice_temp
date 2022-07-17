@@ -10,4 +10,4 @@ var index = numbs.count - 1
 repeat {
     print(numbs[undex])
     index -= 1
-} while index > 0
+} while index >= 0
