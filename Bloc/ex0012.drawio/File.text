@@ -26,3 +26,18 @@ N-натуральное число
 
 var n = Int(readline()!)!            int - целое число, readline - считывание
 print(n % 7 = 0 && n % 23 = 0)       print - печать на экран, знак & - шифт + 7
+
+Задача 4
+
+public class ex004 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("x0 = ");
+        int x0 = sc.nextInt();
+        System.out.printf("x1 = ");
+        int x1 = sc.nextInt();
+        double d = Math.abs(x1 - x0);
+        System.out.println(d);
+        sc.close();
+    }
+}
