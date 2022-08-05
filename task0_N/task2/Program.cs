@@ -1,42 +1,20 @@
 ﻿/*
-Напиште программу, которая будет выдавать название дня недели по задонному номеру
+Напишите программу, которая будет выдавать название дня недели по заданному номеру
 */
 
 
-int a = 1, b = 2,
-    c = 3, d = 4,
-    e = 5, f = 6,
-    g = 7;
-
-int what = new int();
+int day = new int();
 Console.WriteLine("Введите номер дня недели");
-what = Convert.ToInt32(Console.ReadLine());
+day = Convert.ToInt32(Console.ReadLine());
 
-if ( what == a )
-{
-    Console.WriteLine("Название первого дня недели - понедельник");
-} 
-if ( what == b )
-{
-    Console.WriteLine("Название второго дня недели - вторник");
-} 
-if ( what == c )
-{
-    Console.WriteLine("Название третьего дня недели - среда");
-} 
-if ( what == d )
-{
-    Console.WriteLine("Название четвёртого дня недели - четверг");
-} 
-if ( what == e )
-{
-    Console.WriteLine("Название пятого дня недели - пятница");
-} 
-if ( what == f )
-{
-    Console.WriteLine("Название шестого дня недели - суббота");
-} 
-if ( what == g )
-{
-    Console.WriteLine("Название седьмого дня недели - воскресение");
-} 
+if ( day <  1 ) Console.WriteLine("Дня недели с таким номером, не существует");  // Можно написать так if ( day < 1 || day > 7), где || знак "или"
+else if ( day >  7 ) Console.WriteLine("Дня недели с таким номером, не существует");
+else if ( day == 1 ) Console.WriteLine("Название первого дня недели - понедельник");
+else if ( day == 2 ) Console.WriteLine("Название второго дня недели - вторник");
+else if ( day == 3 ) Console.WriteLine("Название третьего дня недели - среда");
+else if ( day == 4 ) Console.WriteLine("Название четвёртого дня недели - четверг");
+else if ( day == 5 ) Console.WriteLine("Название пятого дня недели - пятница");
+else if ( day == 6 ) Console.WriteLine("Название шестого дня недели - суббота");
+else if ( day == 7 ) Console.WriteLine("Название седьмого дня недели - воскресение");
+
+// Команда при зажатии сочетания клавиш cntrl+alt+стрелочки вверх или вниз, позволяет писать одновременном в выделенных строках одинаковый текст.
